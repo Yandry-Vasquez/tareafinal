@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link rel="icon" type="image/png" href="images/gem1.jpeg">
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <header class="logo1">
+  
+      <figure >
+        
+        <img class="logo" src= "logobox.png" alt="crosffit" >
+    </figure>
+     
+    
+    </header>
+
+    <header>
+      <img class="header-img" src="foto1html.jpeg" alt="mi portada"> </img>
+      <h1 class="header">  Yandri Joel Zambrano Vasquez</h1>
+      <h2 class="subtitle">Curso 4<sup>to</sup> "A"</h2>
+
+        <nav>
+          <ul class="navigation">
+            <li class="nav-item"><a href="#acerca">Acerca de</a> </li>
+            <li class="nav-item"> <a href="#proyec">entrenamientos</a> </li>
+            <li class="nav-item"> <a href="#contad">Contacto</a> </li>
+          </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section>
+      <h2 class="header" id="acerca">Acerca de</h2>
+      <p class="intro">
+      <br>Mi nombre es Yandri Zambrano, soy estudiante de la Universidad laica Eloy Alfaro de Manabi facultad de ciencias informaticas <br>
+      actualmente estoy cursando el 4to semestre de la carrera Tecnologias de la informacion. <br>
+      <br> Me gustan practicar crossfit el cual es un deporte que lo practico hace 2 año y lo considero un deporte demasiado exigente <br>
+      <br>Me gustaria una web donde pueda transmitir informacion acerca de este deporte ya sea tips, indicaciones, recomendaciones <br>
+      o clases guias para que este accesible a cualquier persona. <br>
+
+
+      <ul class="social-media">
+        <li>
+          <a href="https://twitter.com" target="_blank">
+            <img src="C:\Users\yandr\Desktop\PRACTICA-ICH.ACCESIBILIDAD\twitter.png" alt="Twitter "/>
+            <p class="social-link-text">Twitter</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com" target="_blank">
+            <img src="github-logo.png" alt="Github "/>
+            <p class="social-link-text">Github</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com" target="_blank">
+            <img src="linkedin.png" alt="Linkedin "/>
+            <p class="social-link-text">Linkedin</p>
+          </a>
+        </li>
+      </ul>
+    </p>
+  </section>
+
+    <section>
+      <h2 class="header" id="proyec">ENTRENAMIENTOS</h2>
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="Boton para ir hacia atrás"></button>
+        <div class="window">
+          <ul class="project-container">
+
+            <li class="project1-container"><button class="project1 project">
+              <img src="foto8.jpg" class="project-img" alt=""></button>
+            </li>
+
+            
+            <li class="project3-container"><button class="project3 project">
+              <img src="foto4.jpg" class="project-img" alt=""></button>
+            </li>
+
+            <li class="project4-container" aria-hidden="true"><button class="project4 project"
+              tabindex="-1"><img src="foto5.jpg" class="project-img" alt=""></button>
+            </li>
+
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="foto2html.jpg" class="project-img" alt=""></button>
+            </li>
+            <li class="project5-container" aria-hidden="true"><button class="project5 project"
+              tabindex="-1"><img src="foto3.jpg" class="project-img" alt=""></button>
+            </li>
+
+          </ul>
+        </div>
+        <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante"></button>
+      </div>
+    </section>
+     
+        <button class="botonc">VER CLASE GRATUITA</button>
+      
+     
+  </main>
+
+
+    <footer class="contact-section">
+      <h2 class="header" id="contad">Contacto</h2>
+      <p class="intro">LLENAR EL FORMULARIO PARA MAS INFORMACION</p>
+      <form class="form-container">
+        <label class="form-label">Nombre</label>
+          <input type="text" aria-label="nombre" id="name"/>
+        <span id="name-error" aria-live="assertive"></span> <br/>
+        <label class="form-label">Correo</label>
+          <input type="text" aria-label="correo"/> <br />
+        <label class="message-input">Mensaje <input type="text" /> <br/>  </label>
+      <button class="send-button">Enviar</button>
+      </form>
+    </footer>
+
+    <div class="notification" aria-live="assertive"></div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">the king</h2>
+          <img src="images/project2.png" class="modal-project-image" alt="the king crosffit"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
